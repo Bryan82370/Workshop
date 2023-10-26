@@ -5,6 +5,43 @@
 </head>
 <body>
 {% extends "nav_logout.html" %}
+{% load static %}
+{% block content %} 
+<div class="row">
+    <div class="col-7" style="padding-left: 10%;padding-top: 13%;">
+        <h1 style="padding-bottom: 2%;color: rgba(80,138,22,255)">Ensemble</h1>
+        <h1>Nous pouvons sauver</h1>
+        <h1>la planète</h1>
+        <br/>
+        <br/>
+        <a class="btn btn-success my-2 my-sm-0" style="width:auto;background-color: rgba(80,138,22,255);border-color:rgba(80,138,22,255);border-radius: 30px;margin-left: 10%;padding-left: 20px;padding-right: 20px;" type="submit" href="informations">Savoir plus</a>
+    </div>
+    <div class="col-5">
+        <img src="{% static '/img/eath.png' %}" style="width: 660px;padding-top: 50px;margin-left: -150px;" alt="My image">
+    </div>
 
+</div>
+<style>
+    .footer {
+        margin-top: 125px;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        color: white;
+        background-color: #373e46;
+        text-align: center;
+    }
+</style>
+
+<footer class="page-footer footer font-small" style="background-color: rgba(80,138,22,255)">
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2023 Copyright :
+        <p style="margin-bottom: -5px;">Green missions </p>
+    </div>
+    <!-- Copyright -->
+
+</footer>
+{% endblock %} 
 </body>
 </html>

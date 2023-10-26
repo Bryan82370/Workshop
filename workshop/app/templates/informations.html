@@ -5,6 +5,73 @@
 </head>
 <body>
 {% extends "nav_logout.html" %}
+{% load static %}
 
+{% block content %} 
+<br/>
+<br/>
+<br/>
+<br/>
+<div class="row featurette" style="margin-left: 5%;">
+    <div class="col-md-7">
+        <br/>
+        <br/>
+        <br/>
+      <h2 class="featurette-heading">"L'amour pour toutes les créatures vivantes est le but le plus noble attribut de l'homme" </h2>
+      <br/><h2 style="color:rgba(80,138,22,255)">Charles DARWIN</h2>
+    </div>
+    <div class="col-md-5">
+      <img src="{% static '/img/test.jpeg' %}" alt="500x500" style="width: 500px; height: 500px;border-radius: 30px;" data-holder-rendered="true">
+    </div>
+  </div>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+
+<div class="row featurette" style="margin-left: 5%;margin-right: 5%;">
+    
+<div class="col-md-7 order-md-2">
+    <br/>
+    <br/>
+    <br/>
+    <h2 class="featurette-heading" style="color:rgba(80,138,22,255)">Notre futur, notre objectif</h2>
+    <p class="lead">
+        À Green Missions, notre dévouement se tourne vers un avenir plus durable. En collaboration avec les autorités publiques, des organisations à but non lucratif et des entreprises respectueuses de l'environnement, nous concevons des missions écologiques à votre portée. En accomplissant ces missions, vous contribuerez à la préservation de notre planète. En retour, nos entreprise partenaires, partageant notre vision d'un monde plus respectueux de l'environnement, vous récompenseront. Rejoignez-nous dans notre quête commune d'un monde où chaque action compte pour protéger notre précieuse planète.</p>
+</div>
+<div class="col-md-5 order-md-1">
+    <img src="{% static '/img/logo_appli.png' %}" alt="500x500" style="width: 500px; height: 500px;border-radius: 30px;" data-holder-rendered="true">
+</div>
+</div>
+<br/>
+<br/>
+<br/>
+<br/>
+
+<style>
+    .footer {
+        margin-top: 50px;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        color: white;
+        background-color: #373e46;
+        text-align: center;
+    }
+</style>
+
+<footer class="page-footer footer font-small" style="background-color: rgba(80,138,22,255)">
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2023 Copyright :
+        <p style="margin-bottom: -5px;">Green missions </p>
+    </div>
+    <!-- Copyright -->
+
+</footer>
+{% endblock %} 
 </body>
 </html>

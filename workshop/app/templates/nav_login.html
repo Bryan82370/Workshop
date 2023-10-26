@@ -10,19 +10,20 @@
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
 </header>
 
-<body style="background-color: #FFF9F1;">
+<body style="background-color: rgba(255,255,255,255);">
     {% block sidebare %}
-    <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg bg-primary" style="background-color: rgba(255,255,255,255)!important;" data-bs-theme="light">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
+          <img src="{% static '/img/logo_appli.png' %}" style="width: 50px;height:auto;margin-top: 2px;border-radius: 100%;" alt="My image">
+          <a class="navbar-brand" href="/" style="color: rgba(80,138,22,255);margin-left: 1%;">Green missions</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarColor01">
             <ul class="navbar-nav me-auto">
               <li class="nav-item">
-                <a class="nav-link" href="my_missions">Mes missions</span>
-                </a>
+                <a class="nav-link" href="my_missions">Mes missions</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="mission_available">Missions disponibles</a>
@@ -32,16 +33,8 @@
               </li>
             </ul>
             <form class="d-flex">
-              <div class="btn-group my-2 my-sm-0" role="group" aria-label="Button group with nested dropdown">
-                <button type="button" class="btn btn-success">Mon profil</button>
-                <div class="btn-group" role="group">
-                  <button id="btnGroupDrop2" type="button" class="btn btn-success dropdown-toggle show" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="true"></button>
-                  <div class="dropdown-menu show" aria-labelledby="btnGroupDrop2" style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate3d(0px, 40px, 0px);" data-popper-placement="bottom-start">
-                    <a class="dropdown-item" href="settings">Paramètres</a>
-                    <a class="dropdown-item" href="/">Se déconnecter</a>
-                  </div>
-                </div>
-              </div>
+              <a class="btn btn-success my-2 my-sm-0" type="submit" style="margin-left: 8px;border-radius: 30px;background-color: rgb(244,68,52);border-color:rgb(244,68,52);" href="/">Se déconnecter</a>
+              
             </form>
           </div>
         </div>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Accueil</title>
+</head>
+<body>
+{% extends "nav_logout.html" %}
+{% load static %}
+{% block content %} 
+<div class="form" style="background-color: rgba(80,138,22,255);width: 60%;margin-left: 20%;margin-top: 4%;border-radius: 30px;padding: 5%;">
+    <h4 style="margin-left: 35%;color:white">Arrosage des plantes</h4>
+<br/>
+    <div class="row">
+        <div class="col-6"> 
+        <span style="color:white"><strong>Type :</strong> Mission</span>
+        <br/><br/>
+        <span style="color:white"> <strong>Date :</strong> Tous les soirs à partir de 18h00 jusqu'au 15/11/2022</span>
+        </div>
+        <div class="col-6">
+            <span style="color:white"><strong>Personnes :</strong> 1</span>
+            <br/><br/>
+            <span style="color:white"><strong>Localisation :</strong> 30 route de villemur-sur-tarn, 31584</span>
+        </div>
+    </div>
+    <br/>
+    <span style="color:white"><strong>Récompense :</strong> 15% de remise sur un ticket de cinéma</span><br/><br/>
+    <span style="color:white"><strong>Equipement requis :</strong> Non</span><br/><br/>
+    <span style="color:white"><strong>description :</strong> Non</span>
+    <br/>
+    <br/>
+    <div class="row">
+        <div class="col-6 ">
+            <a class="btn btn-success" style="width: 50%;margin-bottom: 1%;background-color: white;border-color:white;color: black;margin-left: 100px;">Accepter</a>
+        </div>
+        <div class="col-6 ">
+            <a class="btn btn-success" style="width: 50%;margin-bottom: 1%;background-color: white;border-color:white;color: black;margin-left: 100px;">Refuser</a>
+        </div>
+    </div>
+</div>
+{% endblock %}
+</body>
+</html>

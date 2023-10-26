@@ -34,3 +34,5 @@ def registration(request):
 def informations(request):
     return render(request, 'informations.html')
 
+def assignation(request):
+    return render(request, 'assignation.html')

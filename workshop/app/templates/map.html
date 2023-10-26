@@ -5,6 +5,25 @@
 </head>
 <body>
 {% extends "nav_login.html" %}
+{% load static %}
+{% block content %} 
+<br/>
+<div style="margin-left: 10%;">
+    <div id="wrapper-9cd199b9cc5410cd3b1ad21cab2e54d3">
+        <div id="map-9cd199b9cc5410cd3b1ad21cab2e54d3"></div><script>(function () {
+            var setting = {"query":"Toulouse, France","width":1200,"height":635,"satellite":false,"zoom":12,"placeId":"ChIJ_1J17G-7rhIRMBBBL5z2BgQ","cid":"0x406f69c2f411030","coords":[43.604652,1.444209],"lang":"fr","queryString":"Toulouse, France","centerCoord":[43.604652,1.444209],"id":"map-9cd199b9cc5410cd3b1ad21cab2e54d3","embed_id":"1020541"};
+            var d = document;
+            var s = d.createElement('script');
+            s.src = 'https://1map.com/js/script-for-user.js?embed_id=1020541';
+            s.async = true;
+            s.onload = function (e) {
+                window.OneMap.initMap(setting)
+            };
+            var to = d.getElementsByTagName('script')[0];
+            to.parentNode.insertBefore(s, to);
+        })();</script><a href="https://1map.com/fr/map-embed">1 Map</a></div>
+</div>
 
+{% endblock %} 
 </body>
 </html>

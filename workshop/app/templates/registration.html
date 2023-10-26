@@ -5,6 +5,79 @@
 </head>
 <body>
 {% extends "nav_logout.html" %}
+{% load static %}
+{% block content %} 
 
+<div class="row">
+    <div class="col-9" style="padding-top: 1%;margin-left: -100px;">
+        <div class="container" style="margin-bottom: 50px;width: 60%;">
+            <div class="row">
+                <div class="col">
+                    <div style="background-color: rgba(80,138,22,255);border-color:rgba(80,138,22,255);border-radius: 30px;border: 0rem solid;padding: 3%;">
+                        <div class="card-body" style="background-color: white;border-color:white;border-radius: 15px;border: 0rem solid;padding: 3%;">
+                            <form>
+                                <div class="form-group" style="color:black;">
+                                    <label for="tttt" style="margin-left: 2%;">Nom :</label>
+                                    <input type="email" placeholder="Entrer votre nom" class="form-control" id="email" aria-describedby="emailHelp" required>
+                                </div>
+                                <br/>
+                                <div class="form-group" style="color:black;">
+                                    <label for="tttt" style="margin-left: 2%;">Nom d'utilisateur :</label>
+                                    <input type="email" placeholder="Entrer votre prénom" class="form-control" id="email" aria-describedby="emailHelp" required>
+                                </div>
+                                <br/>
+                                <div class="form-group" style="color:black;">
+                                    <label for="tttt" style="margin-left: 2%;">Adresse mail :</label>
+                                    <input type="email" placeholder="Entrer votre adresse mail" class="form-control" id="email" aria-describedby="emailHelp" required>
+                                </div>
+                                <br/>
+                                <div class="form-group" style="color:black;">
+                                    <label for="ttttt" style="margin-left: 2%;">Mot de passe :</label>
+                                    <input type="email" placeholder="Entrer votre sujet" class="form-control" id="sujet" required>
+                                </div>
+                                <br/>
+                                <div class="form-group" style="color:black;">
+                                    <label for="message" style="margin-left: 2%;">Localisation :</label>
+                                    <input type="email" placeholder="Entrer votre ville" class="form-control" id="sujet" required>
+                                </div>
+                                <br/>
+                            </form>
+                        </div>
+                    </div>
+                        <br/>
+                        <div class="mx-auto">
+                            <button type="submit" class="btn btn-dark" style="margin-left: 37%;width: 25%;background-color: rgba(80,138,22,255);border-color:rgba(80,138,22,255);">S'inscrire</button>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-3">
+        <img src="{% static '/img/eath.png' %}" style="width: 500px;padding-top: 200px;margin-left: -100px;" alt="My image">
+    </div>
+    <style>
+        .footer {
+            margin-top: -10px;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            color: white;
+            background-color: #373e46;
+            text-align: center;
+        }
+    </style>
+    
+    <footer class="page-footer footer font-small" style="background-color: rgba(80,138,22,255)">
+    
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2023 Copyright :
+            <p style="margin-bottom: -5px;">Green missions </p>
+        </div>
+        <!-- Copyright -->
+    
+    </footer>
+{% endblock %} 
+
+</div>
 </body>
 </html>
